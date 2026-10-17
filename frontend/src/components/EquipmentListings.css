@@ -1,0 +1,50 @@
+.equipment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.equipment-card {
+  transition: transform 0.3s;
+}
+
+.equipment-card:hover {
+  transform: translateY(-3px);
+}
+
+.equipment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.equipment-header h3 {
+  color: #2e7d32;
+  margin: 0;
+}
+
+.equipment-details {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.equipment-details p {
+  margin: 0.5rem 0;
+}
+
+.listed-date {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: #999;
+  font-size: 0.85rem;
+  text-align: right;
+}

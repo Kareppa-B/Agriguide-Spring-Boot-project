@@ -1,0 +1,49 @@
+.crop-list-container {
+  padding: 1rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.crops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.crop-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.crop-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.crop-card h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.scientific-name {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.crop-info {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.crop-info p {
+  margin: 0.5rem 0;
+}

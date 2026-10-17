@@ -1,0 +1,228 @@
+/* src/components/AdminDashboard.css */
+
+.admin-dashboard-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 0 3rem 0;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.admin-header-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.admin-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.admin-title h1 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.8rem;
+}
+
+.admin-title p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.admin-badge {
+  display: inline-block;
+  background: #ff5252;
+  color: white;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+}
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.admin-tab-btn {
+  background: none;
+  border: none;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.admin-tab-btn:hover {
+  color: #1a237e;
+  background: rgba(26, 35, 126, 0.04);
+}
+
+.admin-tab-btn.active {
+  color: #1a237e;
+  border-bottom-color: #1a237e;
+  background: rgba(26, 35, 126, 0.08);
+}
+
+/* Stats Overview Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.stat-icon {
+  font-size: 2.2rem;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+.stat-data h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #1a237e;
+}
+
+.stat-data span {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Admin Tables */
+.table-container {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.admin-table th {
+  background: #f8f9fa;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.admin-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.admin-table tr:hover {
+  background: #fafafa;
+}
+
+/* Status Badges */
+.badge-active {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-inactive {
+  background: #ffebee;
+  color: #c62828;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-farmer {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 0.2rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.badge-worker {
+  background: #fff3e0;
+  color: #e65100;
+  padding: 0.2rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.badge-admin {
+  background: #ede7f6;
+  color: #512da8;
+  padding: 0.2rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

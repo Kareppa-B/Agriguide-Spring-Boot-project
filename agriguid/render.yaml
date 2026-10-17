@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: agriguid-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: DB_URL
+        value: jdbc:mysql://yamabiko.proxy.rlwy.net:57756/railway
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        value: ajPBwwlRAvvZHIlJopeVNfMWlmyQmjdy
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://agriguide-project.vercel.app

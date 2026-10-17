@@ -1,0 +1,239 @@
+/* src/components/FarmerDashboard.css */
+
+.farmer-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0 3rem 0;
+}
+
+.farmer-header {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.farmer-header-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.farmer-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.farmer-title h1 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.8rem;
+}
+
+.farmer-title p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* Verification Badges */
+.verification-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.verification-badge.approved {
+  background: #a5d6a7;
+  color: #1b5e20;
+}
+
+.verification-badge.pending {
+  background: #ffe082;
+  color: #e65100;
+}
+
+.verification-badge.rejected {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+.verification-callout {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.verification-callout.approved {
+  background: #e8f5e9;
+  border-left: 4px solid #2e7d32;
+  color: #1b5e20;
+}
+
+.verification-callout.pending {
+  background: #fff8e1;
+  border-left: 4px solid #ffa000;
+  color: #e65100;
+}
+
+.verification-callout.rejected {
+  background: #ffebee;
+  border-left: 4px solid #d32f2f;
+  color: #c62828;
+}
+
+/* Tab Navigation */
+.farmer-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: #2e7d32;
+  background: rgba(46, 125, 50, 0.05);
+}
+
+.tab-btn.active {
+  color: #2e7d32;
+  border-bottom-color: #2e7d32;
+  background: rgba(46, 125, 50, 0.08);
+}
+
+/* Farmer Profile Details */
+.profile-overview-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.profile-field label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #777;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.profile-field p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Hiring Cards */
+.worker-hire-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.worker-hire-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 0.75rem;
+}
+
+.worker-hire-header h3 {
+  margin: 0 0 0.25rem 0;
+  color: #2e7d32;
+  font-size: 1.2rem;
+}
+
+.worker-rates-banner {
+  background: #f1f8e9;
+  border-radius: 6px;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.hire-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.hire-actions a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.phone-btn {
+  background: #2e7d32;
+  color: white;
+}
+
+.phone-btn:hover {
+  background: #1b5e20;
+}

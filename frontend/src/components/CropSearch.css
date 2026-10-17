@@ -1,0 +1,24 @@
+.crop-search-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-form {
+  margin-bottom: 2rem;
+}
+
+.search-results {
+  margin-top: 2rem;
+}
+
+.search-results h2 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
